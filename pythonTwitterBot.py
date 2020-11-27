@@ -1,6 +1,7 @@
 #Jonathan Ingram
 #12/10/2019
-#Twitter Bot for personal account (not_j0hn)
+#Twitter Automation
+
 
 
 #Two functions one that post random word in a sentense format: Noun-Verb-Noun
@@ -32,10 +33,6 @@ api = tweepy.API(auth)
 #update status
 postTime = "17:30:30"
 
-
-p = "20:42:30"
-
-
 imageList = []
 messageList = []
 
@@ -47,9 +44,9 @@ def getTime():
     return string
 
 def tweetImage():
-    media = api.media_upload("kevin.jfif")
+    media = api.media_upload("image.png")
 
-    post_result = api.update_status(status="#BoysBeEatin:\n\n\n", media_ids=[media.media_id])
+    post_result = api.update_status(status="#image:\n\n\n", media_ids=[media.media_id])
 
 def onePost():
     api.update_status(status="test")
@@ -58,7 +55,7 @@ def onePost():
 
 
 def post():
-    while (postTime != getTime()): #loop until it's noon
+    while (postTime != getTime()): #loop until it's the time specified
 
 
 
