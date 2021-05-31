@@ -57,7 +57,7 @@ class Posts:
 
             print(meme)
 
-            answer = input("Is this a good meme? ")
+            answer = input("Is this good? ")
 
             if(answer == "y" or answer == "yes"):
                 print("Posted to twitter")
@@ -69,11 +69,10 @@ class Posts:
                    print("Coming in hot\n\n")
                    
                 else:
-                    print("\n\nYour call my guy\n\n")
+                    print("\n\nYour call\n\n")
                     freshMeme = False
 
             else:
-                print("\nshid u right")
                 print("Not posted\n\n")
 
 a = Posts.newMeme()
